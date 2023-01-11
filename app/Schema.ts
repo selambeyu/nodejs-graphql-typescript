@@ -8,7 +8,7 @@ const Schema = gql`
 
   type Query {
     getAllPeople: [Person]
-    getPerson(id: int): Person
+    getPerson(id: Int): Person
   }
 `;
 export default Schema;
