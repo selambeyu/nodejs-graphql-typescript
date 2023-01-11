@@ -1,0 +1,14 @@
+import { gql } from "apollo-server-express";
+
+const Schema = gql`
+  type Person {
+    id: ID!
+    name: String
+  }
+
+  type Query {
+    getAllPeople: [Person]
+    getPerson(id: int): Person
+  }
+`;
+export default Schema;
